@@ -1,0 +1,47 @@
+.support {
+  .support-card {
+    img {
+      @include img-100;
+    }
+    .img-card-info {
+      bottom: 3.813rem;
+      left: 3.063rem;
+    }
+  }
+}
+@include for-desktop {
+  .support {
+    .support-card {
+      margin-bottom: 1.875rem;
+      .img-card-info {
+        .text {
+          font-size: 1rem;
+        }
+        .title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@include for-phone {
+  .support {
+    .support-card {
+      .img-card-info {
+        left: 1rem;
+        bottom: 2.063rem;
+      }
+    }
+    .figure {
+      margin-bottom: 23px;
+    }
+  }
+}
+:dir(rtl) {
+  .support {
+    .img-card-info {
+      bottom: 3.813rem;
+      right: 3.063rem;
+    }
+  }
+}

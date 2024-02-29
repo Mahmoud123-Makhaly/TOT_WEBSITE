@@ -1,0 +1,43 @@
+.location {
+  background-color: $light-purple;
+  padding: 60px 110px;
+  border-radius: 23px;
+  margin: 2rem 0;
+  .location-content {
+    padding: 38px 42px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    @extend .border-raduis-23;
+  }
+}
+@include for-tv {
+  .location {
+    border-radius: 10px;
+    padding: 2rem;
+    .location-content {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+    }
+  }
+}
+@include for-tablet {
+  .location {
+    padding: 1rem;
+    .message-content {
+      .title {
+        font-size: 18px;
+      }
+    }
+    .list-module {
+      padding: 0;
+    }
+  }
+}
+@include for-large-phones {
+  .location-content {
+    .text {
+      font-size: 12px;
+      margin-inline-start: 6px;
+    }
+  }
+}

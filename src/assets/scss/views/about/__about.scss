@@ -1,0 +1,103 @@
+// about banner
+.about-banner {
+  .banner-info {
+    background-color: $white;
+    @extend .border-raduis-4;
+    box-shadow: $shadow 0px 0.313rem 0.938rem;
+  }
+}
+@include for-desktop {
+  .about-banner {
+    .banner-info {
+      .row {
+        flex-direction: column-reverse !important;
+      }
+      .banner-img {
+        margin-bottom: 0.875rem;
+      }
+    }
+  }
+}
+@include for-tablet {
+  .about-banner {
+    .banner-info {
+      margin-top: 2.188rem;
+    }
+  }
+}
+// about mission
+
+@include for-tablet {
+  .mission {
+    background-image: url(../../../images/about/mission-vertical.jpg) !important;
+  }
+}
+// vision styles
+@include for-tablet {
+  .vission {
+    background-image: url(../../../images/about/vission-vertical.jpg) !important;
+  }
+}
+
+// specialties styles
+
+@include for-tablet {
+  .fields-card {
+    .text {
+      font-size: 20px;
+    }
+  }
+}
+:dir(rtl) {
+  .brief-card {
+    .overlay {
+      right: 2rem;
+    }
+  }
+}
+
+// transformation styles
+.transformation {
+  .transformation-card {
+    .title {
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      margin: 8px 0;
+    }
+    .text {
+      color: $dark-gray;
+      &:last-of-type {
+        font-weight: normal !important;
+      }
+    }
+  }
+}
+@include for-desktop {
+  .transformation {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .visual-img {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@include for-tablet {
+  .transformation {
+    padding: 1rem !important;
+
+    .transformation-card {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+  }
+}
+// media-card
+@include for-large-phones {
+  .media-card {
+    .desc {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// background image mixin
+@mixin background($size: cover, $position: center) {
+  background: {
+    position: $position;
+    size: $size;
+  }
+}
+@mixin center-element {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin img-100 {
+  width: 100%;
+  height: fit-content;
+}

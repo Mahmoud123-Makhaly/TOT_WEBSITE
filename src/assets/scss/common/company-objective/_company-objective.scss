@@ -1,0 +1,33 @@
+.company-objective {
+  padding: 3.438rem 1.938rem;
+  background-size: cover;
+  background-position: center;
+  .bold-desc {
+    padding: 2.813rem 0;
+  }
+}
+@include for-tablet {
+  .company-objective {
+    background-size: cover !important;
+    background-position: top center !important;
+
+    padding: 311px 16px 52px;
+    margin: 1.438rem 0 2.063rem 0;
+    .bold-desc {
+      padding: 16px 0 8px 0;
+      font-size: 16px;
+      line-height: 24px !important;
+    }
+    .title {
+      font-size: 1.5rem;
+      padding-bottom: 0;
+    }
+    .desc {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      &:first-of-type {
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+}

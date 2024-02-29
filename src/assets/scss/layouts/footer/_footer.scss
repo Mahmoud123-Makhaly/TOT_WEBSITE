@@ -1,0 +1,49 @@
+.footer {
+  padding: 57px 0;
+  .footer-content {
+    padding: 0 6.375rem;
+  }
+  .copy-right {
+    padding-top: 1.25rem;
+    border-top: 1px solid #fff;
+    .copyright-title {
+      margin-bottom: 0;
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+@include for-desktop {
+  .footer {
+    .footer-content {
+      padding: 0;
+    }
+  }
+}
+@include for-tablet {
+  .footer {
+    padding: 38px 0;
+
+    .logo {
+      margin-bottom: 1.953rem;
+      width: 4.625rem;
+      height: 1.875rem;
+    }
+    .copy-right {
+      text-align: center;
+      .copyright-title {
+        margin-bottom: 0.5rem;
+      }
+      .gallery {
+        margin-bottom: 2rem;
+      }
+    }
+    i {
+      font-size: 0.938rem;
+    }
+  }
+}
+:dir(rtl) {
+  .list-unstyled {
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+@import './mixins';
+@import '../library/all.min.css';
+@import './bs-custom';
+@import './mediaquery';
+@import './global';
+
+@import './font-family';
+@import './common/_common';
+@import './views/homepage/_homepage';
+@import './layouts/_layouts';
+
+@import './views/about/_about';
+@import './views/solutions/_solutions';
+@import './views/restaurant/__restaurant';
+
+@import './loops';
+@import './views/fashion/_fashion';
+@import './views/pharma/_pharma';
+@import './views/markets/_markets';
+@import './views/contact-us/_contact-us';
+ 

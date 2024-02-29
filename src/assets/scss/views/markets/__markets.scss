@@ -1,0 +1,83 @@
+// market banner styles
+.markets-banner {
+  .banner-content {
+    background-color: transparent;
+  }
+  .banner-img {
+    img {
+      width: auto !important;
+    }
+  }
+}
+@include for-tablet {
+  .markets-banner {
+    .row {
+      flex-direction: column-reverse !important;
+      .banner-img {
+        text-align: start !important;
+      }
+    }
+  }
+}
+// market message styles
+
+.market_message {
+  .market_img {
+    border-radius: 4px;
+    background-color: $light-purple;
+    @extend .border-raduis-4;
+    padding: 1rem;
+    img {
+      @include img-100;
+    }
+  }
+  .message_item {
+    margin-bottom: 40px;
+  }
+}
+@include for-tv {
+  .market_message {
+    .message_item {
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}
+// market solution
+.market_solutions {
+  .detail_box {
+    padding: 62px 65px;
+    .title {
+      font-size: 32px;
+      width: 60%;
+      margin-bottom: 30px;
+    }
+  }
+}
+@include for-desktop {
+  .market_solutions {
+    padding: 1.5rem 1rem !important;
+    .detail_box {
+      padding: 2rem !important;
+      .title {
+        width: 100% !important;
+        margin-bottom: 1.5rem !important;
+      }
+    }
+  }
+}
+@include for-tablet {
+  .market_solutions {
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    .row {
+      flex-direction: column-reverse;
+    }
+    .detail_box {
+      border-radius: 10px;
+      box-shadow: none;
+    }
+  }
+}

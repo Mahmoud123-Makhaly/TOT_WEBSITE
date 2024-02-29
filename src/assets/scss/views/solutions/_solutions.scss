@@ -1,0 +1,72 @@
+//solution banner style
+.solution-banner {
+  img {
+    width: auto !important;
+  }
+  .title {
+    @extend .font-80;
+    color: $white !important;
+    margin-inline-end: 1rem;
+  }
+}
+@include for-tablet {
+  .solution-banner {
+    .title {
+      font-size: 3rem !important;
+    }
+  }
+}
+@include for-phone {
+  .solution-banner {
+    .row {
+      flex-direction: row;
+    }
+
+    .title {
+      font-size: 1.625rem !important;
+    }
+  }
+}
+// oms
+.oms,
+.lastMile-solution,
+.social-e-commerce {
+  margin-top: 108px;
+  img {
+    width: 92%;
+  }
+}
+
+// channel-management
+.channel-management {
+  margin-top: 94px;
+  img {
+    width: 92%;
+  }
+  .content-block {
+    padding: 23px 28px;
+  }
+}
+
+.lastMile-solution {
+  .content-block {
+    padding: 18px 27px;
+  }
+}
+
+.social-e-commerce {
+  .content-block {
+    padding: 18px 23px;
+  }
+}
+@include for-tv {
+  .oms,
+  .channel-management,
+  .lastMile-solution,
+  .social-e-commerce {
+    margin-top: 42px;
+    img {
+      width: 100%;
+    }
+  }
+}

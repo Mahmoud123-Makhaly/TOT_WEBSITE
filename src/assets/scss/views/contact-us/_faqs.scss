@@ -1,0 +1,39 @@
+.faqs {
+  background-color: $light-purple;
+  padding: 60px 110px;
+  border-radius: 23px;
+  margin: 2rem 0;
+  @extend .border-raduis-23;
+  .faqs-content {
+    background-color: $white;
+    padding: 54px 158px 54px 46px;
+    @extend .border-raduis-23;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .form-select {
+    border: 1px solid $primary;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+@include for-tv {
+  .faqs {
+    border-radius: 10px;
+    padding: 2rem;
+    .faqs-content {
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  }
+}
+@include for-tablet {
+  .faqs {
+    padding: 1rem;
+    .faqs-content {
+      padding: 1rem;
+    }
+  }
+}
+

@@ -1,0 +1,64 @@
+.git_in_touch {
+  background-color: $light-purple;
+  padding: 60px 110px;
+  border-radius: 23px;
+
+  .form-control,
+  .form-select {
+    border: 1px solid $primary;
+    padding: 10px 20px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .touch-form {
+    background-color: $white;
+    padding: 54px 158px 54px 46px;
+    @extend .border-raduis-23;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .touch-img {
+      right: -53% !important;
+      img {
+        width: 91% !important;
+        height: fit-content !important;
+      }
+    }
+  }
+}
+@include for-tv {
+  .git_in_touch {
+    padding: 2rem;
+  }
+}
+@include for-desktop {
+  .git_in_touch {
+    .touch-img {
+      margin-bottom: 1rem;
+      img {
+        width: 100% !important;
+        height: fit-content !important;
+      }
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@include for-tablet {
+  .git_in_touch {
+    padding: 1rem;
+    border-radius: 10px;
+    .touch-form {
+      border-radius: 10px;
+      padding: 1rem;
+    }
+  }
+}
+.contact-modal {
+  .close {
+    cursor: pointer;
+  }
+  button {
+    width: 80%;
+  }
+}

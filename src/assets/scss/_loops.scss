@@ -1,0 +1,33 @@
+// font size loop
+$font-size-step: 1;
+$font-size-max: 200;
+
+@for $i from 1 through $font-size-max {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+// border rasuis  loop
+$border-raduis-step: 1;
+$border-raduis-max: 50;
+@for $i from 1 through $border-raduis-max {
+  .border-raduis-#{$i} {
+    border-radius: #{$i}px;
+  }
+}
+// font weight  loop
+$font-weight-step: 100;
+$font-weight-max: 900;
+@for $i from 1 through $font-weight-max {
+  .font-weight-#{$i} {
+    font-weight: #{$i};
+  }
+}
+// line height  loop
+$line-height-step: 0;
+$line-height-max: 100;
+@for $i from 1 through $line-height-max {
+  .line-height-#{$i} {
+    line-height: #{$i}px;
+  }
+}

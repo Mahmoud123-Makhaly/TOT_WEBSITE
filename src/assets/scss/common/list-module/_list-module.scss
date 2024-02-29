@@ -1,0 +1,18 @@
+.list-module {
+  li {
+    // margin-bottom: 20px !important;
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+@include for-tv {
+  .list-module {
+    border-radius: 10px;
+  }
+}
+@include for-tablet {
+  .list-module {
+    padding: 1rem;
+  }
+}

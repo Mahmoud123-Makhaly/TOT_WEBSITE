@@ -1,0 +1,72 @@
+@import './gitintouch';
+@import './faqs';
+@import './location';
+// contact banner
+.contact-banner {
+  .banner-content {
+    .desc {
+      color: #000 !important;
+    }
+  }
+}
+@include for-tablet {
+  .contact-banner {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
+//   contact questions
+.messages {
+  margin-bottom: 42px;
+  padding: 60px 110px !important;
+  .list-module {
+    padding: 30px;
+    img {
+      width: auto !important;
+    }
+  }
+}
+@include for-tv {
+  .messages {
+    padding: 2rem !important;
+  }
+}
+@include for-desktop {
+  .messages {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .list-module {
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .visual-img {
+      margin-bottom: 1rem;
+      img {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .message-content {
+    li {
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+@include for-tablet {
+  .messages {
+    padding: 1rem !important;
+    border-radius: 10px !important;
+  }
+}
+@include for-large-phones {
+  .visual-block {
+    .message-content {
+      .text {
+        margin-inline-start: 5px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+}

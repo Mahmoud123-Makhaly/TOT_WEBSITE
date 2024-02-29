@@ -1,0 +1,56 @@
+// restaurant banner
+.restaurant-banner {
+  .desc {
+    color: #000 !important;
+  }
+  .banner-img {
+    img {
+      width: auto !important;
+    }
+  }
+}
+@include for-tablet {
+  .restaurant-banner {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .banner-content {
+      .title {
+        font-size: 24px !important;
+      }
+    }
+    .banner-img {
+      margin: 0.5rem 0;
+    }
+  }
+}
+// restaurant software
+.restaurant-software {
+  .visual-img {
+    background-color: $sky-blue;
+    @extend .border-raduis-23;
+    @include flex-center;
+    img {
+      width: 100%;
+      height: revert-layer;
+      padding-top: 20px;
+    }
+  }
+}
+
+@include for-tablet {
+  .restaurant-software {
+    padding: 1.5rem 1rem !important;
+    border-radius: 10px !important;
+    .detail_box {
+      border-radius: 10px !important;
+      box-shadow: none;
+    }
+    .row {
+      flex-direction: column-reverse;
+    }
+    .visual-img {
+      margin-bottom: 1rem;
+    }
+  }
+}

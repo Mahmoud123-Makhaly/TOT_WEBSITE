@@ -1,0 +1,17 @@
+export {
+  fields,
+  channelInfo,
+  crmInfo,
+  ecommerceInfo,
+  lastMilelInfo,
+  omsInfo,
+  pimInfo,
+  posInfo,
+  socialInfo,
+  servicesData,
+  supportFigures,
+  foodServicesInfo,
+  fashionSolutionsInfo,
+  pharmaSolutionInfo,
+  featuresInfo,
+} from './CommonArrays';

@@ -1,0 +1,21 @@
+.content-block {
+  padding: 23px 47px;
+
+  &.end-overlayed {
+    position: relative;
+    right: 70px;
+    top: 66px;
+  }
+}
+@include for-tv {
+  .content-block {
+    &.end-overlayed {
+      position: static;
+    }
+  }
+}
+@include for-tablet {
+  .content-block {
+    padding: 1rem;
+  }
+}

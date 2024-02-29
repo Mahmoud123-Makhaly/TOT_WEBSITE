@@ -1,0 +1,60 @@
+.mini-card {
+  border-radius: 4px;
+  .row {
+    align-items: center;
+  }
+
+  .mini-card-text {
+    color: $black;
+    margin: 0;
+  }
+  .mini-card-img {
+    width: fit-content;
+    padding: 1.063rem 1.25rem;
+    border-radius: 0.625rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &.bg-desktop-antiquewhite {
+      background-color: $AntiqueWhite;
+    }
+    &.bg-desktop-aqua {
+      background-color: $aqua;
+    }
+    &.bg-desktop-sky-blue {
+      background-color: $sky-blue;
+    }
+    &.bg-desktop-light-green {
+      background-color: $light-green;
+    }
+  }
+}
+
+@include for-tablet {
+  .mini-card {
+    &.bg-mobile-antiquewhite {
+      background-color: $AntiqueWhite;
+    }
+    &.bg-mobile-aqua {
+      background-color: $aqua;
+    }
+    &.bg-mobile-sky-blue {
+      background-color: $sky-blue;
+    }
+    &.bg-mobile-light-green {
+      background-color: $light-green;
+    }
+    .mini-card-img {
+      padding: 0;
+      margin-bottom: 0.5rem;
+    }
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@include for-large-phones {
+  .mini-card {
+    height: auto;
+  }
+}

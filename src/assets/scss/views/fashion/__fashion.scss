@@ -1,0 +1,59 @@
+// fashion banner styles
+.fashion-banner {
+  .banner-content {
+    background-color: $white;
+    @extend .border-raduis-23;
+    padding: 38px 42px 46px;
+
+    .desc {
+      color: #000 !important;
+      &:first-of-type {
+        @extend .font-weight-700;
+      }
+    }
+  }
+  img {
+    width: auto !important;
+  }
+}
+@include for-tablet {
+  .fashion-banner {
+    .row {
+      flex-direction: column-reverse;
+      .banner-img {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+// management solutions styles
+
+.fashion {
+  .visual-img {
+    background-color: $sky-blue;
+
+    img {
+      width: 100%;
+      height: fit-content !important;
+    }
+  }
+}
+
+@include for-tablet {
+  .fashion {
+    padding: 1.5rem 1rem !important;
+    border-radius: 10px !important;
+    .detail_box {
+      border-radius: 10px !important;
+      box-shadow: none;
+    }
+    .row {
+      flex-direction: column-reverse !important;
+    }
+    .visual-img {
+      img {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.figure {
+  img {
+    @include img-100;
+  }
+  .figure-content {
+    .text {
+      padding: 1.313rem 0;
+    }
+  }
+}
+
+@include for-large-phones {
+  .figure {
+    .figure-content {
+      .text {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
